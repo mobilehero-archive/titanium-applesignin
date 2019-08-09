@@ -1,0 +1,58 @@
+{
+	"name": "@titanium/applesignin",
+	"version": "0.0.1",
+	"description": "Native modules that allows you to use the iOS 13+ Apple Sign In API with Axway Titanium native mobile apps.",
+	"main": "index.js",
+	"scripts": {
+		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"postinstall": "tiapp-install-module",
+		"postuninstall": "tiapp-uninstall-module",
+		"test": "npm install --ignore-scripts && npm run list-files"
+	},
+	"author": {
+		"name": "Brenton House",
+		"email": "brenton.house@gmail.com",
+		"url": "https://brenton.house"
+	},
+	"maintainers": [
+		{
+			"name": "Brenton House",
+			"email": "brenton.house@gmail.com",
+			"url": "https://brenton.house"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "github:brentonhouse/titanium-applesignin"
+	},
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/brentonhouse/titanium-applesignin/issues"
+	},
+	"homepage": "https://github.com/brentonhouse/titanium-applesignin#readme",
+	"keywords": [
+		"titanium",
+		"mobile",
+		"alloy",
+		"turbo",
+		"axway",
+		"appcelerator",
+		"ios",
+		"android",
+		"iphone",
+		"ipad",
+		"applesignin",
+		"animation",
+		"titanium-native-module",
+		"brenton-house"
+	],
+	"titanium": {
+		"type": "native-module",
+		"platform": [
+			"ios"
+		]
+	},
+	"dependencies": {
+		"@titanium/tiapp-xml": "^0.6.0"
+	}
+}
