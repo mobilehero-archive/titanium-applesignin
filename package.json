@@ -42,17 +42,29 @@
 		"iphone",
 		"ipad",
 		"applesignin",
-		"animation",
 		"titanium-native-module",
 		"brenton-house"
 	],
 	"titanium": {
 		"type": "native-module",
-		"platform": [
-			"ios"
-		]
+		"platform": {
+			"ios": {
+				"moduleid": "ti.applesignin",
+				"name": "titanium-apple-sign-in",
+				"version": "1.1.0",
+				"apiversion": 2,
+				"architectures": [
+					"armv7",
+					"arm64",
+					"i386",
+					"x86_64"
+				],
+				"minsdk": "8.0.0",
+				"guid": "cb40d586-ff2c-483e-8fac-69d1e82bd94c"
+			}
+		}
 	},
 	"dependencies": {
-		"@titanium/tiapp-xml": "^0.6.0"
+		"@titanium/tiapp-xml": ">=0.9.4"
 	}
 }

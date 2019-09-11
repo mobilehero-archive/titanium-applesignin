@@ -1,0 +1,11 @@
+framework module TiApplesignin {
+  umbrella header "TiApplesignin.h"
+
+  export *
+  module * { export * }
+}
+
+module TiApplesignin.Swift {
+    header "TiApplesignin-Swift.h"
+    requires objc
+}

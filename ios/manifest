@@ -1,0 +1,11 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+description: titanium-apple-sign-in is a Swift based Titanium module.
+author: Hans Knöchel
+license: MIT
+copyright: Copyright (c) 2019 by Hans Knöchel
+
+# these should not be edited
+
