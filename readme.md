@@ -8,17 +8,18 @@
 * [📝 Description](#-description)
 * [🚀 Getting Started](#-getting-started)
 	* [Install `@titanium/applesignin` in root of project](#install-titaniumapplesignin-in-root-of-project)
+	* [Add entitlement to `tiapp.xml`](#add-entitlement-to-tiappxml)
+	* [Add to Apple Developer Account](#add-to-apple-developer-account)
 * [✨Features](#features)
 * [Requirements](#requirements)
 * [Example](#example)
-* [API's](#apis)
+* [APIs](#apis)
 	* [Methods](#methods)
 		* [`createLoginButton()`](#createloginbutton)
 		* [`authorize({ scopes })`](#authorize-scopes-)
 		* [`getCredentialState(userId, callback)`](#getcredentialstateuserid-callback)
 	* [Events](#events)
 		* [`login`](#login)
-* [Installation](#installation)
 * [License](#license)
 * [Author](#author)
 * [📚Learn More](#learn-more)
@@ -37,6 +38,31 @@ This is a repackaging of the compiled iOS module for [ti.applesignin](https://gi
 ```bash
 npm install @titanium/applesignin
 ```
+
+### Add entitlement to `tiapp.xml`
+
+```xml
+     <entitlements>
+        <dict>
+          <key>com.apple.developer.applesignin</key>
+          <array>
+              <string>Default</string>
+          </array>
+        </dict>
+      </entitlements>
+```
+
+### Add to Apple Developer Account
+
+1. Go to your App Identifiers - https://developer.apple.com/account/resources/identifiers/list
+2. Create new identifier (or edit an existing one)
+3. Add capability by checking the box for `Sign In with Apple`
+
+![Sign In with Apple](https://cdn.secure-api.org/images/sign-in-with-apple-capability.png)
+
+4. Create a provisioning profile for that app id - https://developer.apple.com/account/resources/profiles/list
+5. Download and install that provisioning profile
+6. Make sure id of Titanium app matches App ID created: `<id>YOUR.APP.ID</id>`
 
 
 ## ✨Features
@@ -59,12 +85,11 @@ This module was designed to follow a similar scheme like Ti.Facebook and Ti.Goog
 var AppleSignIn = require('@titanium/applesignin');
 
 AppleSignIn.addEventListener('login', function (event) {
+  console.warn(`event: ${JSON.stringify(event, null, 2)}`);
   if (!event.success) {
     alert(event.error);
     return;
   }
-
-  Ti.API.warn(event);
 });
 
 var win = Ti.UI.createWindow({
@@ -81,7 +106,7 @@ win.add(btn);
 win.open();
 ```
 
-## API's
+## APIs
 
 ### Methods
 
@@ -91,7 +116,7 @@ Creates a new localized login button.
 
 #### `authorize({ scopes })`
 
-Starts an authorization flow with an optional array of scoped. Defaults to all scopes (`fullName` and `email`).
+Starts an authorization flow with an optional array of scoped. Defaults to all scopes ( `fullName` and `email` ).
 
 #### `getCredentialState(userId, callback)`
 
@@ -103,17 +128,6 @@ The result is returned to the `state` parameter of the `callback` and can be aut
 #### `login`
 
 The login event with the user's `profile`.
-
-## Installation
-
-- [x] Add the following entitlements to your project:
-```xml
-<key>com.apple.developer.applesignin</key>
-<array>
-  <string>Default</string>
-</array>
-```
-- [x] Make sure your server is eligible to send mails to the Apple Sign In provider service.
 
 
 ## License
