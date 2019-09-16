@@ -41,15 +41,23 @@ npm install @titanium/applesignin
 
 ### Add entitlement to `tiapp.xml`
 
+> Be sure the `<entitlements>` element goes **outside** of the `<plist>` element in your `tiapp.xml` file!
+
 ```xml
-     <entitlements>
-        <dict>
-          <key>com.apple.developer.applesignin</key>
-          <array>
-              <string>Default</string>
-          </array>
-        </dict>
-      </entitlements>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+	<ios>
+		<plist>
+		</plist>
+		<entitlements>
+			<dict>
+				<key>com.apple.developer.applesignin</key>
+				<array>
+					<string>Default</string>
+				</array>
+			</dict>
+		</entitlements>
+	</ios>
+</ti:app>
 ```
 
 ### Add to Apple Developer Account
