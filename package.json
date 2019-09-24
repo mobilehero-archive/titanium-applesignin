@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/applesignin",
-	"version": "0.0.4",
+	"version": "1.0.0",
 	"description": "Native modules that allows you to use the iOS 13+ Apple Sign In API with Axway Titanium native mobile apps.",
 	"main": "index.js",
 	"scripts": {
@@ -51,7 +51,7 @@
 			"ios": {
 				"moduleid": "ti.applesignin",
 				"name": "titanium-apple-sign-in",
-				"version": "1.1.0",
+				"version": "1.1.1",
 				"apiversion": 2,
 				"architectures": [
 					"armv7",
@@ -59,7 +59,7 @@
 					"i386",
 					"x86_64"
 				],
-				"minsdk": "8.0.0",
+				"minsdk": "8.2.0",
 				"guid": "cb40d586-ff2c-483e-8fac-69d1e82bd94c"
 			}
 		}

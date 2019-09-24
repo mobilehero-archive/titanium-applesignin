@@ -29,7 +29,7 @@
 
 ## 📝 Description
 
-This is a repackaging of the compiled iOS module for [ti.applesignin](https://github.com/hansemannn/titanium-apple-sign-in) to allow for installation via npm.
+This is a repackaging of the compiled iOS module for [ti.applesignin](https://github.com/appcelerator-modules/titanium-apple-sign-in) to allow for installation via npm.
 
 ## 🚀 Getting Started
 
@@ -75,7 +75,7 @@ npm install @titanium/applesignin
 
 ## ✨Features
 
-* [x] Includes Titanium native iOS module: `ti.applesignin 1.1.0`
+* [x] Includes Titanium native iOS module: `ti.applesignin 1.1.1`
 
 ## Requirements
 
@@ -150,7 +150,7 @@ Hans Knöchel
 
 ## 📚Learn More
 
-- [ti.applesignin GitHub Repo](https://github.com/hansemannn/titanium-apple-sign-in) - Repo for original ti.applesignin module
+- [ti.applesignin GitHub Repo](https://github.com/appcelerator-modules/titanium-apple-sign-in) - Repo for original ti.applesignin module
 
 
 ## 📣 Feedback

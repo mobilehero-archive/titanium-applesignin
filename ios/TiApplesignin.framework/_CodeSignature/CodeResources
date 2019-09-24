@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TiApplesignin-Swift.h</key>
 		<data>
-		LiHHX0UfDjXvLDEGSx1zQc+tjpY=
+		oTYDFZR1boz/CK3h2Z5NalJn8t0=
 		</data>
 		<key>Headers/TiApplesignin.h</key>
 		<data>
@@ -18,15 +18,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IdUpM18k12da8DNXTshs0MzRZJc=
+		/AsI7wAIdB9jd1O66Osj/ONXnyA=
+		</data>
+		<key>Modules/TiApplesignin.swiftmodule/i386.swiftdoc</key>
+		<data>
+		oaZ1JFWJSPDnf9cwB0XIu+OyHYM=
+		</data>
+		<key>Modules/TiApplesignin.swiftmodule/i386.swiftmodule</key>
+		<data>
+		Bw0+LMTh9FEd/cOfVzdrI2Jo8yY=
 		</data>
 		<key>Modules/TiApplesignin.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		M0NHu8LtOv3r2rayIwRf6JG+egY=
+		fUvbJaNICZX1mWjsncvlhX2SqYc=
 		</data>
 		<key>Modules/TiApplesignin.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		+bcFpKfWo9JHO8sw66c5EAa4kiA=
+		apOyAbSWz/IBT/+N17ZhU3A7rO4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -37,13 +45,21 @@
 	<dict>
 		<key>Headers/TiApplesignin-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oTYDFZR1boz/CK3h2Z5NalJn8t0=
+			</data>
 			<key>hash2</key>
 			<data>
-			e1hxGg7WLmOeN1JtfOyd7GXlGLZSLa/65qZGcezH9Cc=
+			Qw2CUdTH5/peUnFMTflHmUM1FzdRJMSlG3cdpFHwSCE=
 			</data>
 		</dict>
 		<key>Headers/TiApplesignin.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			WR0dUTafmnNA3uCjjOGC3SIYukA=
+			</data>
 			<key>hash2</key>
 			<data>
 			d+bAoBbyFuC8ox7l6HHR3Cj9mfbt8lH5K68SzZ8ab8E=
@@ -51,27 +67,65 @@
 		</dict>
 		<key>Headers/TiApplesigninModuleAssets.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1Qwck6fri/L4mnwZEv8cbDWOGRI=
+			</data>
 			<key>hash2</key>
 			<data>
 			mp8dEj0tlgjbOobBaZtnd0obArS0sNnsWEI8II2sadI=
 			</data>
 		</dict>
-		<key>Modules/TiApplesignin.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/TiApplesignin.swiftmodule/i386.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oaZ1JFWJSPDnf9cwB0XIu+OyHYM=
+			</data>
 			<key>hash2</key>
 			<data>
-			SY59nSvqScuXAZZKAusoLTqHBJta/2MuJjfK1e8Zksg=
+			j7OV4oGO+qcVes5UooyCO1a1waCwhSZiOQUJfw21XIs=
+			</data>
+		</dict>
+		<key>Modules/TiApplesignin.swiftmodule/i386.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bw0+LMTh9FEd/cOfVzdrI2Jo8yY=
+			</data>
+			<key>hash2</key>
+			<data>
+			14g2EPsPeQbjsmHEUFG3gZvEkJHMQwu1GnVmG93Q6GA=
+			</data>
+		</dict>
+		<key>Modules/TiApplesignin.swiftmodule/x86_64.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fUvbJaNICZX1mWjsncvlhX2SqYc=
+			</data>
+			<key>hash2</key>
+			<data>
+			wkp21Ut8sUAX6jDdFnctpWnFF2R33hWYwhfxavH/sGo=
 			</data>
 		</dict>
 		<key>Modules/TiApplesignin.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			apOyAbSWz/IBT/+N17ZhU3A7rO4=
+			</data>
 			<key>hash2</key>
 			<data>
-			U6gymsNhbj6ncSzmzpSXUXPMDNJP7ESA+OzR19e7V40=
+			TOVxnjeDGRVVmL5uWmp6tZrqVR3lojmSkFFhyjxXzPE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Xr998P4q8q1NZCW5hfCxBquhyEs=
+			</data>
 			<key>hash2</key>
 			<data>
 			7kHJ3onin/qlPCAbO8560dn0A/OWVsn2nIuvq5nZZ6A=
