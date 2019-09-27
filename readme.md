@@ -9,9 +9,12 @@
 # @titanium/applesignin
 
 [![@titanium/applesignin](https://img.shields.io/npm/v/@titanium/applesignin.png)](https://www.npmjs.com/package/@titanium/applesignin)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=brentonhouse/titanium-applesignin)](https://dependabot.com)
 
 
-> Native modules that allows you to use the iOS 13+ Apple Sign In API with Axway Titanium native mobile apps.
+> This is an experiment by [Brenton House](https://brenton.house) using open-source projects.  You are welcome to try it out but be aware of the risks_
+
+<br/>
 
 * [📝 Description](#-description)
 * [🚀 Getting Started](#-getting-started)
@@ -37,7 +40,9 @@
 
 ## 📝 Description
 
-This is a repackaging of the compiled iOS module for [ti.applesignin](https://github.com/appcelerator-modules/titanium-apple-sign-in) to allow for installation via npm.
+> Native modules that allows you to use the iOS 13+ Apple Sign In API with Axway Titanium native mobile apps.   
+>     
+> This is a repackaging of the compiled iOS module for [ti.applesignin](https://github.com/appcelerator-modules/titanium-apple-sign-in) to allow for installation via npm.
 
 ## 🚀 Getting Started
 
@@ -98,7 +103,7 @@ The following project- and OS-requirements are necessary:
 This module was designed to follow a similar scheme like Ti.Facebook and Ti.GoogleSignIn.
 
 ```js
-var AppleSignIn = require('@titanium/applesignin');
+const AppleSignIn = require('@titanium/applesignin');
 
 AppleSignIn.addEventListener('login', function (event) {
   console.warn(`event: ${JSON.stringify(event, null, 2)}`);
@@ -108,11 +113,11 @@ AppleSignIn.addEventListener('login', function (event) {
   }
 });
 
-var win = Ti.UI.createWindow({
+const win = Ti.UI.createWindow({
   backgroundColor: '#fff'
 });
 
-var btn = AppleSignIn.createLoginButton({ width: 280, height: 38 });
+const btn = AppleSignIn.createLoginButton({ width: 280, height: 38 });
 
 btn.addEventListener('click', function () {
   AppleSignIn.authorize();
@@ -158,7 +163,7 @@ Hans Knöchel
 
 ## 📚Learn More
 
-- [ti.applesignin GitHub Repo](https://github.com/appcelerator-modules/titanium-apple-sign-in) - Repo for original ti.applesignin module
+⭐  [ti.applesignin GitHub Repo](https://github.com/appcelerator-modules/titanium-apple-sign-in) - Repo for original ti.applesignin module   
 
 
 ## 📣 Feedback
