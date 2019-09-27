@@ -4,6 +4,7 @@
 .eslintrc.yml
 
 .dependabot
+.github
 
 ios/example/*
 
