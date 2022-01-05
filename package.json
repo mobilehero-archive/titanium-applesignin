@@ -1,14 +1,17 @@
 {
 	"name": "@titanium/applesignin",
-	"version": "1.0.2",
-	"description": "Native modules that allows you to use the iOS 13+ Apple Sign In API with Axway Titanium native mobile apps.",
+	"version": "1.0.4",
+	"description": "⭐  Axway Amplify module that allows you to use the iOS 13+ Apple Sign In API with Appcelerator Titanium SDK",
 	"main": "index.js",
 	"scripts": {
-		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
 		"postinstall": "tiapp-install-module",
 		"postuninstall": "tiapp-uninstall-module",
-		"test": "npm install --ignore-scripts && npm run list-files",
-		"prepublishOnly": "git pull && bump"
+		"lint": "eslint . --fix",
+		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"prep": "npm install --ignore-scripts && npm run list",
+		"test": "npm run prep",
+		"prepublishOnly2": "git pull && npm test && bump insane",
+		"prepublishOnly": "git pull && npm test && npm audit fix && bump insane"
 	},
 	"author": {
 		"name": "Brenton House",
@@ -30,7 +33,7 @@
 	"bugs": {
 		"url": "https://github.com/brentonhouse/titanium-applesignin/issues"
 	},
-	"homepage": "https://github.com/brentonhouse/titanium-applesignin#readme",
+	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"keywords": [
 		"titanium",
 		"mobile",
@@ -44,6 +47,16 @@
 		"ipad",
 		"applesignin",
 		"titanium-native-module",
+		"sdk",
+		"plugin",
+		"amplify",
+		"api-builder",
+		"appcelerator-titanium",
+		"titanium-sdk",
+		"titanium-mobile",
+		"titanium-module",
+		"axway-sdk",
+		"axway-amplify",
 		"brenton-house"
 	],
 	"titanium": {
@@ -66,6 +79,6 @@
 		}
 	},
 	"dependencies": {
-		"@titanium/tiapp-xml": ">=0.9.5"
+		"@titanium/tiapp-xml": ">=1.0.11"
 	}
 }
