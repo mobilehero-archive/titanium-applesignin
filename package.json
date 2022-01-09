@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/applesignin",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "⭐  Axway Amplify module that allows you to use the iOS 13+ Apple Sign In API with Appcelerator Titanium SDK",
 	"main": "index.js",
 	"scripts": {
@@ -8,30 +8,28 @@
 		"postuninstall": "tiapp-uninstall-module",
 		"lint": "eslint . --fix",
 		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"prep": "npm install --ignore-scripts && npm run list",
+		"prep": "npm install --ignore-scripts",
 		"test": "npm run prep",
-		"prepublishOnly2": "git pull && npm test && bump insane",
-		"prepublishOnly": "git pull && npm test && npm audit fix && bump insane"
+		"prepublishOnly": "git pull && npm test && bump insane",
+		"prepublishOnly2": "git pull && npm test && npm audit fix && bump insane"
 	},
 	"author": {
 		"name": "Brenton House",
-		"email": "brenton.house@gmail.com",
 		"url": "https://brenton.house"
 	},
 	"maintainers": [
 		{
 			"name": "Brenton House",
-			"email": "brenton.house@gmail.com",
 			"url": "https://brenton.house"
 		}
 	],
 	"repository": {
 		"type": "git",
-		"url": "github:brentonhouse/titanium-applesignin"
+		"url": "github:mobilehero-archive/titanium-applesignin"
 	},
 	"license": "Apache-2.0",
 	"bugs": {
-		"url": "https://github.com/brentonhouse/titanium-applesignin/issues"
+		"url": "https://github.com/mobilehero-archive/titanium-applesignin/issues"
 	},
 	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"keywords": [
@@ -79,6 +77,34 @@
 		}
 	},
 	"dependencies": {
-		"@titanium/tiapp-xml": ">=1.0.11"
+		"@geek/cache": "^1.0.2",
+		"@geek/config": "^0.2.4",
+		"@geek/dotenv": "^0.0.9",
+		"@geek/jsonc": "^1.0.4",
+		"@geek/jwt": "^1.0.1",
+		"@geek/logger": "^1.0.18",
+		"@geek/retry": "^1.0.0",
+		"@geek/spawn": "^0.0.3",
+		"@geek/spinner": "^1.0.0",
+		"@geek/tld": "^2.0.1-1",
+		"@titanium/appcelerator": "^6.0.5",
+		"@titanium/bluebird": "^3.7.10",
+		"@titanium/errors": "^1.0.8",
+		"@titanium/essentials": "^1.0.39",
+		"@titanium/events": "^1.0.20",
+		"@titanium/eventsource": "^1.0.6",
+		"@titanium/jwt": "^1.0.11",
+		"@titanium/module-copier": "^1.0.15",
+		"@titanium/please": "^1.0.17",
+		"@titanium/polyfill": "^1.0.18",
+		"@titanium/querystring": "^1.0.4",
+		"@titanium/tiapp-xml": "^1.0.16",
+		"@titanium/titanium": "^5.4.8",
+		"@titanium/turbo": "^2.2.24"
+	},
+	"devDependencies": {
+		"@geek/eslint-config": "^1.0.3",
+		"@titanium/eslint-config": "^1.0.11",
+		"eslint": "^8.6.0"
 	}
 }
