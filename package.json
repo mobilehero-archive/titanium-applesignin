@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/applesignin",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "⭐  Axway Amplify module that allows you to use the iOS 13+ Apple Sign In API with Appcelerator Titanium SDK",
 	"main": "index.js",
 	"scripts": {
@@ -87,12 +87,19 @@
 		"@geek/spawn": "^0.0.3",
 		"@geek/spinner": "^1.0.0",
 		"@geek/tld": "^2.0.1-1",
+		"@nativeloop/mobile": "^1.0.3",
 		"@titanium/appcelerator": "^6.0.6",
+		"@titanium/authentication": "^1.0.20",
+		"@titanium/authentication-mock": "^1.0.3",
+		"@titanium/authentication-oauth": "^1.0.21",
 		"@titanium/bluebird": "^3.7.12",
 		"@titanium/errors": "^1.0.9",
 		"@titanium/essentials": "^1.0.40",
 		"@titanium/events": "^1.0.21",
 		"@titanium/eventsource": "^1.0.6",
+		"@titanium/identity": "^2.0.11",
+		"@titanium/json5": "^1.0.4",
+		"@titanium/jsonc": "^1.0.7",
 		"@titanium/jwt": "^1.0.12",
 		"@titanium/module-copier": "^1.0.15",
 		"@titanium/please": "^1.0.18",
@@ -100,7 +107,9 @@
 		"@titanium/querystring": "^1.0.5",
 		"@titanium/tiapp-xml": "^1.0.17",
 		"@titanium/titanium": "^5.4.10",
-		"@titanium/turbo": "^2.2.26"
+		"@titanium/turbo": "^2.2.27",
+		"nativeloop": "^1.0.4",
+		"tiapp-dir": "^1.0.7"
 	},
 	"devDependencies": {
 		"@geek/eslint-config": "^1.0.3",
